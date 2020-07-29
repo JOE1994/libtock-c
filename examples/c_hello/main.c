@@ -17,5 +17,6 @@ static void nop(
 
 int main(void) {
   putnstr_async(hello, sizeof(hello), nop, NULL);
+  printf("Hello Tock World\n");
   return 0;
 }

@@ -1,0 +1,110 @@
+In file included from ./../../support/warning_header.h:6:0,
+                 from <command-line>:0:
+/usr/include/newlib/stdio.h: In function '__sputc_r':
+/usr/include/newlib/stdio.h:671:39: sorry, unimplemented: Thumb-1 hard-float VFP ABI
+ _ELIDABLE_INLINE int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
+                                       ^~~~~~
+In file included from main.c:1:0:
+lvgl_driver.h:5:23: fatal error: lvgl/lvgl.h: No such file or directory
+ #include <lvgl/lvgl.h>
+                       ^
+compilation terminated.
+make: *** [build/cortex-m4/main.o] Error 1
+In file included from lvgl_driver.c:1:0:
+lvgl_driver.h: At top level:
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+lvgl_driver.h:5:23: fatal error: lvgl/lvgl.h: No such file or directory
+ #include <lvgl/lvgl.h>
+                       ^
+compilation terminated.
+make: *** [build/cortex-m0/lvgl_driver.o] Error 1
+In file included from main.c:1:0:
+lvgl_driver.h:5:23: fatal error: lvgl/lvgl.h: No such file or directory
+ #include <lvgl/lvgl.h>
+                       ^
+compilation terminated.
+In file included from ./../../support/warning_header.h:6:0,
+                 from <command-line>:0:
+/usr/include/newlib/stdio.h: In function '__sputc_r':
+/usr/include/newlib/stdio.h:671:39: sorry, unimplemented: Thumb-1 hard-float VFP ABI
+ _ELIDABLE_INLINE int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
+                                       ^~~~~~
+make: *** [build/cortex-m3/main.o] Error 1
+In file included from main.c:1:0:
+lvgl_driver.h: At top level:
+lvgl_driver.h:5:23: fatal error: lvgl/lvgl.h: No such file or directory
+ #include <lvgl/lvgl.h>
+                       ^
+In file included from lvgl_driver.c:1:0:
+lvgl_driver.h:5:23: fatal error: lvgl/lvgl.h: No such file or directory
+ #include <lvgl/lvgl.h>
+                       ^
+compilation terminated.
+compilation terminated.
+make: *** [build/cortex-m3/lvgl_driver.o] Error 1
+make: *** [build/cortex-m0/main.o] Error 1
+In file included from lvgl_driver.c:1:0:
+lvgl_driver.h:5:23: fatal error: lvgl/lvgl.h: No such file or directory
+ #include <lvgl/lvgl.h>
+                       ^
+compilation terminated.
+make: *** [build/cortex-m4/lvgl_driver.o] Error 1
+In file included from ./../../../../support/warning_header.h:6:0,
+                 from <command-line>:0:
+/usr/include/newlib/stdio.h: In function '__sputc_r':
+/usr/include/newlib/stdio.h:671:39: sorry, unimplemented: Thumb-1 hard-float VFP ABI
+ _ELIDABLE_INLINE int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
+                                       ^~~~~~
+main.c: In function 'callback':
+main.c:48:3: error: dereferencing type-punned pointer will break strict-aliasing rules [-Werror=strict-aliasing]
+   ipv6_addr_t sender_addr = *((ipv6_addr_t*)BUF_BIND_CFG);
+   ^~~~~~~~~~~
+main.c: In function 'callback':
+main.c:48:3: error: dereferencing type-punned pointer will break strict-aliasing rules [-Werror=strict-aliasing]
+   ipv6_addr_t sender_addr = *((ipv6_addr_t*)BUF_BIND_CFG);
+   ^~~~~~~~~~~
+main.c: In function 'callback':
+main.c:48:3: error: dereferencing type-punned pointer will break strict-aliasing rules [-Werror=strict-aliasing]
+   ipv6_addr_t sender_addr = *((ipv6_addr_t*)BUF_BIND_CFG);
+   ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+make: *** [build/cortex-m0/main.o] Error 1
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+cc1: all warnings being treated as errors
+make: *** [build/cortex-m4/main.o] Error 1
+cc1: all warnings being treated as errors
+make: *** [build/cortex-m3/main.o] Error 1
+In file included from ./../../support/warning_header.h:6:0,
+                 from <command-line>:0:
+/usr/include/newlib/stdio.h: In function '__sputc_r':
+/usr/include/newlib/stdio.h:671:39: sorry, unimplemented: Thumb-1 hard-float VFP ABI
+ _ELIDABLE_INLINE int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
+                                       ^~~~~~
+main.c: In function 'main':
+main.c:140:19: error: cast from function call of type 'double' to non-matching type 'int' [-Werror=bad-function-cast]
+    printf("%d\n", (int) energy(N, bodies));
+                   ^
+main.c:145:19: error: cast from function call of type 'double' to non-matching type 'int' [-Werror=bad-function-cast]
+    printf("%d\n", (int) energy(N, bodies));
+                   ^
+cc1: all warnings being treated as errors
+make: *** [build/cortex-m0/main.o] Error 1
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+main.c: In function 'main':
+main.c:140:19: error: cast from function call of type 'double' to non-matching type 'int' [-Werror=bad-function-cast]
+    printf("%d\n", (int) energy(N, bodies));
+                   ^
+main.c:145:19: error: cast from function call of type 'double' to non-matching type 'int' [-Werror=bad-function-cast]
+    printf("%d\n", (int) energy(N, bodies));
+                   ^
+main.c: In function 'main':
+main.c:140:19: error: cast from function call of type 'double' to non-matching type 'int' [-Werror=bad-function-cast]
+    printf("%d\n", (int) energy(N, bodies));
+                   ^
+main.c:145:19: error: cast from function call of type 'double' to non-matching type 'int' [-Werror=bad-function-cast]
+    printf("%d\n", (int) energy(N, bodies));
+                   ^
+cc1: all warnings being treated as errors
+make: *** [build/cortex-m3/main.o] Error 1
+cc1: all warnings being treated as errors
+make: *** [build/cortex-m4/main.o] Error 1

@@ -2,6 +2,8 @@
 
 #include <timer.h>
 
+// tockloader install --board hail cxx_hello/build/cxx_hello.tab
+
 class Base {
 public:
   virtual void function1() {
@@ -25,6 +27,9 @@ public:
 };
 
 int main() {
+  printf("Hello World\n");
+  printf("%f\n", 123.456);
+
   volatile uint8_t test_branch = 0;
 
   D1 d1class;

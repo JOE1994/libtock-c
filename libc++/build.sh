@@ -15,8 +15,8 @@ if [[ ! -e $NEWLIB_INCLUDE_PATH ]]; then
   exit 1
 fi
 
-export CFLAGS_FOR_TARGET="-g -Os -ffunction-sections -fdata-sections -fPIC -msingle-pic-base -mno-pic-data-is-text-relative -mthumb -mcpu=cortex-m0 -isystem $NEWLIB_INCLUDE_PATH"
-export CXXFLAGS_FOR_TARGET="-g -Os -ffunction-sections -fdata-sections -fPIC -msingle-pic-base -mno-pic-data-is-text-relative -mthumb -mcpu=cortex-m0 -isystem $NEWLIB_INCLUDE_PATH"
+export CFLAGS_FOR_TARGET="-g -Os -ffunction-sections -fdata-sections -fPIC -msingle-pic-base -mno-pic-data-is-text-relative -mthumb -mcpu=cortex-m4 -isystem $NEWLIB_INCLUDE_PATH"
+export CXXFLAGS_FOR_TARGET="-g -Os -ffunction-sections -fdata-sections -fPIC -msingle-pic-base -mno-pic-data-is-text-relative -mthumb -mcpu=cortex-m4 -isystem $NEWLIB_INCLUDE_PATH"
 
 if gcc --version | grep -q clang; then
   echo "$(tput bold)System gcc is clang. Overriding with gcc-6"
@@ -40,9 +40,8 @@ $GCC_SRC_DIR/configure \
   --build=x86_64-linux-gnu \
   --host=x86_64-linux-gnu \
   --target=arm-none-eabi \
-  --with-cpu=cortex-m0 \
+  --with-cpu=cortex-m4 \
   --with-mode=thumb \
-  --disable-fpu \
   --with-newlib $extra_with \
   --with-headers=$NEWLIB_INCLUDE_PATH \
   --enable-languages="c c++" \

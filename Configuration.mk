@@ -135,13 +135,14 @@ override LINK_LIBS_rv32imac += $(LINK_LIBS_rv32)
 override CPPFLAGS_cortex-m += \
       $(CPPFLAGS_PIC)\
       -mthumb\
-      -mfloat-abi=soft\
+      -mfloat-abi=hard\
       -msingle-pic-base\
       -mpic-register=r9\
       -mno-pic-data-is-text-relative
 
 override CPPFLAGS_cortex-m4 += $(CPPFLAGS_cortex-m) \
       -mcpu=cortex-m4
+      #-march=armv7e-m+fp
 
 override CPPFLAGS_cortex-m3 += $(CPPFLAGS_cortex-m) \
       -mcpu=cortex-m3
